@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,218 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-1P-N0p" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="18" y="20" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="VVl-i0-GaI"/>
+                                    <constraint firstAttribute="width" secondItem="Oh2-1P-N0p" secondAttribute="height" multiplier="5:8" constant="11.25" id="aqy-xh-xgV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="omH-de-5jb" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="18" y="283" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="omH-de-5jb" secondAttribute="height" multiplier="5:8" constant="11.25" id="gqp-CR-ihY"/>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="om9-y9-fQV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hsD-Gi-EHy" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="120" y="20" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hsD-Gi-EHy" secondAttribute="height" multiplier="5:8" constant="11.25" id="FkX-aV-Lfd"/>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="Zwm-I0-Upw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-56-wVU" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="120" y="285" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qeY-56-wVU" secondAttribute="height" multiplier="5:8" constant="11.25" id="RE0-jP-UG8"/>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="d0t-YI-Ikc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="V90-a2-eHx" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="224" y="21" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V90-a2-eHx" secondAttribute="height" multiplier="5:8" constant="11.25" id="19J-Q9-r5V"/>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="r61-50-otW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-Ri-mPA" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="224" y="283" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="IzH-6t-rH8"/>
+                                    <constraint firstAttribute="width" secondItem="yOn-Ri-mPA" secondAttribute="height" multiplier="5:8" constant="11.25" id="kYg-Mh-BcQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Yvl-Dj-ls9" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="18" y="152" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="6AR-SR-Hpk"/>
+                                    <constraint firstAttribute="width" secondItem="Yvl-Dj-ls9" secondAttribute="height" multiplier="5:8" constant="11.25" id="QjO-Kk-TY2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-QV-WZW" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="120" y="152" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="CmY-uh-8un"/>
+                                    <constraint firstAttribute="width" secondItem="C5d-QV-WZW" secondAttribute="height" multiplier="5:8" constant="11.25" id="PV2-us-vPz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cjp-6F-ONj" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="224" y="150" width="80" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cjp-6F-ONj" secondAttribute="height" multiplier="5:8" constant="11.25" id="Koy-ir-mFr"/>
+                                    <constraint firstAttribute="height" priority="750" constant="110" id="n0b-XW-nXj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.89401510129999995" blue="0.70241276409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yOn-Ri-mPA" firstAttribute="width" secondItem="yOn-Ri-mPA" secondAttribute="height" multiplier="5:8" constant="11.25" id="03y-Wz-zsm"/>
+                            <constraint firstItem="hsD-Gi-EHy" firstAttribute="width" secondItem="hsD-Gi-EHy" secondAttribute="height" multiplier="5:8" constant="11.25" id="3w5-xL-prS"/>
+                            <constraint firstItem="omH-de-5jb" firstAttribute="width" secondItem="omH-de-5jb" secondAttribute="height" multiplier="5:8" constant="11.25" id="4Eh-7K-Mz4"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="width" secondItem="Cjp-6F-ONj" secondAttribute="height" multiplier="5:8" constant="11.25" id="5bR-7K-3JE"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-79" id="6lk-j5-82L"/>
+                            <constraint firstItem="C5d-QV-WZW" firstAttribute="width" secondItem="C5d-QV-WZW" secondAttribute="height" multiplier="5:8" constant="11.25" id="7wE-MI-aXQ"/>
+                            <constraint firstItem="V90-a2-eHx" firstAttribute="width" secondItem="V90-a2-eHx" secondAttribute="height" multiplier="5:8" constant="11.25" id="84U-Ro-98n"/>
+                            <constraint firstItem="C5d-QV-WZW" firstAttribute="leading" secondItem="hsD-Gi-EHy" secondAttribute="leading" id="8m1-vQ-hgO"/>
+                            <constraint firstItem="yOn-Ri-mPA" firstAttribute="width" secondItem="yOn-Ri-mPA" secondAttribute="height" multiplier="5:8" constant="11.25" id="8pl-xf-M6y"/>
+                            <constraint firstItem="Yvl-Dj-ls9" firstAttribute="width" secondItem="Yvl-Dj-ls9" secondAttribute="height" multiplier="5:8" constant="11.25" id="9Ya-pg-aeb"/>
+                            <constraint firstItem="hsD-Gi-EHy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="DM9-pR-FA4"/>
+                            <constraint firstItem="hsD-Gi-EHy" firstAttribute="width" secondItem="hsD-Gi-EHy" secondAttribute="height" multiplier="5:8" constant="11.25" id="EdL-7B-VrH"/>
+                            <constraint firstItem="yOn-Ri-mPA" firstAttribute="width" secondItem="yOn-Ri-mPA" secondAttribute="height" multiplier="5:8" constant="11.25" id="Gzu-B7-ygN"/>
+                            <constraint firstItem="C5d-QV-WZW" firstAttribute="width" secondItem="C5d-QV-WZW" secondAttribute="height" multiplier="5:8" constant="11.25" id="KYB-Wq-nx5"/>
+                            <constraint firstItem="qeY-56-wVU" firstAttribute="width" secondItem="qeY-56-wVU" secondAttribute="height" multiplier="5:8" constant="11.25" id="Ksp-0b-qsm"/>
+                            <constraint firstItem="V90-a2-eHx" firstAttribute="width" secondItem="V90-a2-eHx" secondAttribute="height" multiplier="5:8" constant="11.25" id="MZt-2p-V2S"/>
+                            <constraint firstItem="hsD-Gi-EHy" firstAttribute="top" secondItem="Yvl-Dj-ls9" secondAttribute="top" constant="-132" id="Mqb-NU-Z7k"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="width" secondItem="Cjp-6F-ONj" secondAttribute="height" multiplier="5:8" constant="11.25" id="OVT-Oq-97P"/>
+                            <constraint firstItem="qeY-56-wVU" firstAttribute="width" secondItem="qeY-56-wVU" secondAttribute="height" multiplier="5:8" constant="11.25" id="RdC-Pw-cGn"/>
+                            <constraint firstItem="omH-de-5jb" firstAttribute="width" secondItem="omH-de-5jb" secondAttribute="height" multiplier="5:8" constant="11.25" id="TFf-9c-08O"/>
+                            <constraint firstItem="Oh2-1P-N0p" firstAttribute="width" secondItem="Oh2-1P-N0p" secondAttribute="height" multiplier="5:8" constant="11.25" id="UGx-Ml-hM9"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="top" secondItem="C5d-QV-WZW" secondAttribute="top" constant="-2" id="VcG-LB-Yof"/>
+                            <constraint firstItem="qeY-56-wVU" firstAttribute="leading" secondItem="omH-de-5jb" secondAttribute="trailing" constant="22" id="VyZ-LS-UJw"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="width" secondItem="Cjp-6F-ONj" secondAttribute="height" multiplier="5:8" constant="11.25" id="WUr-RD-ePF"/>
+                            <constraint firstItem="V90-a2-eHx" firstAttribute="top" secondItem="omH-de-5jb" secondAttribute="top" constant="-262" id="Wel-fb-JVd"/>
+                            <constraint firstItem="Yvl-Dj-ls9" firstAttribute="width" secondItem="Yvl-Dj-ls9" secondAttribute="height" multiplier="5:8" constant="11.25" id="aPp-1I-cun"/>
+                            <constraint firstItem="omH-de-5jb" firstAttribute="width" secondItem="omH-de-5jb" secondAttribute="height" multiplier="5:8" constant="11.25" id="aSV-jq-hdm"/>
+                            <constraint firstItem="Oh2-1P-N0p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dHR-QM-9hT"/>
+                            <constraint firstItem="V90-a2-eHx" firstAttribute="width" secondItem="V90-a2-eHx" secondAttribute="height" multiplier="5:8" constant="11.25" id="efv-NM-bRe"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="top" secondItem="Yvl-Dj-ls9" secondAttribute="bottom" constant="-112" id="f8D-RE-ip7"/>
+                            <constraint firstItem="qeY-56-wVU" firstAttribute="top" secondItem="yOn-Ri-mPA" secondAttribute="top" constant="2" id="h9j-pd-3X3"/>
+                            <constraint firstItem="omH-de-5jb" firstAttribute="leading" secondItem="V90-a2-eHx" secondAttribute="trailing" constant="-286" id="kSG-ck-W4c"/>
+                            <constraint firstItem="Cjp-6F-ONj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="224" id="kxe-pN-d4m"/>
+                            <constraint firstItem="Oh2-1P-N0p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="l8H-0g-zhh"/>
+                            <constraint firstItem="hsD-Gi-EHy" firstAttribute="width" secondItem="hsD-Gi-EHy" secondAttribute="height" multiplier="5:8" constant="11.25" id="oAJ-pF-cSk"/>
+                            <constraint firstItem="omH-de-5jb" firstAttribute="top" secondItem="qeY-56-wVU" secondAttribute="top" constant="-2" id="p69-e0-QIU"/>
+                            <constraint firstItem="Oh2-1P-N0p" firstAttribute="width" secondItem="Oh2-1P-N0p" secondAttribute="height" multiplier="5:8" constant="11.25" id="pbI-zJ-QVr"/>
+                            <constraint firstItem="Oh2-1P-N0p" firstAttribute="top" secondItem="V90-a2-eHx" secondAttribute="top" constant="-1" id="r3h-wK-JIz"/>
+                            <constraint firstItem="Yvl-Dj-ls9" firstAttribute="leading" secondItem="hsD-Gi-EHy" secondAttribute="trailing" constant="-182" id="sDt-76-4J8"/>
+                            <constraint firstItem="Yvl-Dj-ls9" firstAttribute="width" secondItem="Yvl-Dj-ls9" secondAttribute="height" multiplier="5:8" constant="11.25" id="tbC-rc-lHw"/>
+                            <constraint firstItem="yOn-Ri-mPA" firstAttribute="leading" secondItem="qeY-56-wVU" secondAttribute="trailing" constant="24" id="vML-kW-tk9"/>
+                            <constraint firstItem="qeY-56-wVU" firstAttribute="width" secondItem="qeY-56-wVU" secondAttribute="height" multiplier="5:8" constant="11.25" id="xKz-bl-ley"/>
+                            <constraint firstItem="V90-a2-eHx" firstAttribute="leading" secondItem="Cjp-6F-ONj" secondAttribute="leading" id="xbA-jY-1DL"/>
+                            <constraint firstItem="C5d-QV-WZW" firstAttribute="width" secondItem="C5d-QV-WZW" secondAttribute="height" multiplier="5:8" constant="11.25" id="yGX-vt-dat"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="cardViews" destination="Oh2-1P-N0p" collectionClass="NSMutableArray" id="TSp-lI-lfm"/>
+                        <outletCollection property="cardViews" destination="Oh2-1P-N0p" collectionClass="NSMutableArray" id="Q9h-lh-RSA"/>
+                        <outletCollection property="cardViews" destination="V90-a2-eHx" collectionClass="NSMutableArray" id="vBv-34-MvW"/>
+                        <outletCollection property="cardViews" destination="omH-de-5jb" collectionClass="NSMutableArray" id="PoK-wX-RXo"/>
+                        <outletCollection property="cardViews" destination="qeY-56-wVU" collectionClass="NSMutableArray" id="bo5-KV-HEe"/>
+                        <outletCollection property="cardViews" destination="yOn-Ri-mPA" collectionClass="NSMutableArray" id="can-DO-PKg"/>
+                        <outletCollection property="cardViews" destination="hsD-Gi-EHy" collectionClass="NSMutableArray" id="Tkf-b1-2fE"/>
+                        <outletCollection property="cardViews" destination="Yvl-Dj-ls9" collectionClass="NSMutableArray" id="PKh-Mg-Hrc"/>
+                        <outletCollection property="cardViews" destination="Cjp-6F-ONj" collectionClass="NSMutableArray" id="TeL-kA-xBA"/>
+                        <outletCollection property="cardViews" destination="C5d-QV-WZW" collectionClass="NSMutableArray" id="efq-I4-l4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="law-IL-HgD">
+                    <connections>
+                        <action selector="flipCard:" destination="BYZ-38-t0r" id="jh5-yk-mw7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-2126.25" y="-480.63380281690144"/>
         </scene>
     </scenes>
 </document>
