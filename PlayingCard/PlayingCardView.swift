@@ -20,7 +20,11 @@ class PlayingCardView: UIView {
     private func centeredAttributedString(_ string:String , fontSize :CGFloat ) -> NSAttributedString
     {
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
-        font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
+        if #available(iOS 11.0, *) {
+            font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
+        } else {
+            // Fallback on earlier versions
+        }
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         return NSAttributedString(string: string, attributes: [.paragraphStyle:paragraphStyle , .font:font])

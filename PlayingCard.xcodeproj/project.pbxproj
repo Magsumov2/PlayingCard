@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D42B2367221ADA580000A5FE /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42B2366221ADA580000A5FE /* PlayingCardView.swift */; };
 		D44E6E1C2214055100FA45CB /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44E6E1B2214055100FA45CB /* PlayingCardDeck.swift */; };
+		D4772FD22263B7B5001D2EC5 /* CoreMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4772FD12263B7B5001D2EC5 /* CoreMotion.swift */; };
+		D49B888C223AA2C500E9CDB7 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B888B223AA2C500E9CDB7 /* CardBehavior.swift */; };
 		D4FD594622130F6500D1D287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD594522130F6500D1D287 /* AppDelegate.swift */; };
 		D4FD594822130F6500D1D287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD594722130F6500D1D287 /* ViewController.swift */; };
 		D4FD594B22130F6500D1D287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FD594922130F6500D1D287 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		D42B2366221ADA580000A5FE /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		D44E6E1B2214055100FA45CB /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		D4772FD12263B7B5001D2EC5 /* CoreMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotion.swift; sourceTree = "<group>"; };
+		D49B888B223AA2C500E9CDB7 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 		D4FD594222130F6500D1D287 /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FD594522130F6500D1D287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FD594722130F6500D1D287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				D4FD59582213102600D1D287 /* PlayingCard.swift */,
 				D42B2366221ADA580000A5FE /* PlayingCardView.swift */,
 				D4FD594722130F6500D1D287 /* ViewController.swift */,
+				D49B888B223AA2C500E9CDB7 /* CardBehavior.swift */,
+				D4772FD12263B7B5001D2EC5 /* CoreMotion.swift */,
 				D4FD594922130F6500D1D287 /* Main.storyboard */,
 				D4FD595722130FDF00D1D287 /* Supporting */,
 				D4FD594C22130F6A00D1D287 /* Assets.xcassets */,
@@ -156,7 +162,9 @@
 				D44E6E1C2214055100FA45CB /* PlayingCardDeck.swift in Sources */,
 				D4FD59592213102600D1D287 /* PlayingCard.swift in Sources */,
 				D42B2367221ADA580000A5FE /* PlayingCardView.swift in Sources */,
+				D4772FD22263B7B5001D2EC5 /* CoreMotion.swift in Sources */,
 				D4FD594622130F6500D1D287 /* AppDelegate.swift in Sources */,
+				D49B888C223AA2C500E9CDB7 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U4GU2XM35;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U4GU2XM35;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
